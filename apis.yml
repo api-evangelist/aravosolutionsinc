@@ -1,23 +1,76 @@
 aid: aravosolutionsinc
+
 name: Aravosolutionsinc
-description: 'Aravosolutionsinc is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://aravo.com/wp-content/uploads/2026/04/Home-Page_Share_1200x628.png
+
+description: 'Aravo Solutions Inc. provides AI‑powered third‑party risk management software, offering a comprehensive platform for vendor onboarding, due diligence, continuous monitoring, contract management, and compliance across industries. Their Intelligence First™ Platform helps enterprises automate risk assessments, ensure GDPR, DORA, and ESG compliance, and integrate risk data via connectors, delivering transparent, governed decisions for global supply chains.'
+
 url: https://raw.githubusercontent.com/api-evangelist/aravosolutionsinc/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
 tags:
 - Company
-apis: []
+- Risk Management
+- SaaS
+- AI
+- Compliance
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: WellKnown
+  url: well-known/aravosolutionsinc-well-known.yml
+- type: Hosts
+  url: hosts/aravosolutionsinc-hosts.yml
+- type: Vendors
+  url: vendors/aravosolutionsinc-vendors.yml
+- type: StatusPage
+  url: https://status.aravo.com/
+- type: Leadership
+  url: https://aravo.com/leadership/
+- type: Blog
+  url: https://aravo.com/blog/
+- type: GettingStarted
+  url: https://aravo.com/intelligence-first-platform/capabilities/vendor-onboarding/
+- type: DomainSecurity
+  url: security/aravosolutionsinc-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/aravosolutionsinc
+  url: https://aravo.com
+- type: Documentation
+  url: https://aravo.com/blog
+- type: Support
+  url: https://aravo.com/contact-us/
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: "Aravo.com provides product information but no public developer portal or API documentation was found."
+  evidence:
+    - url: https://aravo.com
+      status: 200
+  checked: 2026-09-25
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local

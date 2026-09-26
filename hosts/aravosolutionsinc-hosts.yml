@@ -1,0 +1,80 @@
+generated: '2026-09-25'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 5
+  own: 5
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - other
+  - status
+  - website
+hosts:
+- host: academy.aravo.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: aravo.com
+  role: other
+  relation: own
+- host: api.aravo.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: aravo.com
+  role: api
+  relation: own
+- host: aravo.com
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Leadership
+  - Blog
+  - GettingStarted
+  - Website
+  - Documentation
+  - Support
+  serves:
+  - docs
+  - cdn
+  vendor: cloudflare
+  registrable_domain: aravo.com
+  role: website
+  relation: own
+- host: status.aravo.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - StatusPage
+  serves: []
+  registrable_domain: aravo.com
+  role: status
+  relation: own
+- host: success.aravo.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: aravo.com
+  role: other
+  relation: own
